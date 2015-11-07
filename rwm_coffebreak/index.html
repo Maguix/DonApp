@@ -1,0 +1,182 @@
+<?php
+include ("conexion.php");
+$conex=conectar();
+$nose=mysql_query("SELECT * FROM donantes",$conex);
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>DonApp</title>
+
+	<!-- Set the viewport width to device width for mobile -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  	<!-- IE compatibility mode -->
+  	<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+
+	<!-- Included Bootstrap CSS Files -->
+	<link rel="stylesheet" href="./js/bootstrap/css/bootstrap.min.css" />
+
+	<!-- Includes FontAwesome -->
+	<link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css" />
+	
+	<!-- Css -->	
+	<link rel="stylesheet" href="./css/template.css" />
+	<link rel="stylesheet" href="./css/default.css" />
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="cover"></div>
+
+	<nav class="smartscroll-nav">
+		<ul>
+			<li><a href="#one" class="scroll">INICIO</a></li>
+			<li><a href="#two" class="scroll">DONACION</a></li>
+			<li><a href="#three" class="scroll">TESTIMONIOS</a></li>
+			<li><a href="#four" class="scroll">CENTROS</a></li>
+		</ul>
+	</nav>
+	
+	<section id="one" class="section thisfull">	
+		<div class="home">
+			<h1 class="text-center"></h1>
+			<h2><br /></h2>
+			<form class="form-inline" role="form">
+				<div class="form-group">
+					<label class="sr-only" for="exampleInputEmail"></label>
+					<!--<input type="email" class="form-control" id="exampleInputEmail" placeholder="your email address...">-->
+				</div>
+				<!--<button type="submit" class="btn btn-default"></button>-->
+			</form>
+
+			<img alt="about-me" src="img/layout/qr.jpg" class="derecha" width="120" height="120">
+		</div>
+	</section>
+
+	<section id="two" class="section bg2">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					
+				</div>
+
+				<div class="col-sm-4">
+				<form action="prueba.php" method="post">
+					
+
+<!--<table border="2.px">
+
+<tr>
+<td>-->
+
+
+
+Nombre:<br><input type="text" name="nombre" ><br>
+
+Apellido paterno:<br><input type="text" name="ap_p" ><br>
+Apellido Materno: <br><input type="text" name="ap_m" ><br>
+
+Municipio:<br><input type="text" name="municipio" ><br>
+
+
+Estado:<br><input type="text" name="estado" ><br>
+
+Tipode sangre:<br><input type="text" name="tipo_sangre" ><br>
+
+Organo:<br><input type="text" name="organo" ><br>
+
+Mensaje:</td><td> <textarea name="mensaje" cols="" rows="">Deja tu mensaje aquí</textarea></td>
+
+<br><br>
+<input type="submit"  value="Registrar">
+
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="three" class="section bg3">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="./img/foods/not1.jpg" class="img-responsive" alt="">
+					<h2></h2>
+
+					<h5>  Fui el segundo de los 3 hijos varones, nací en Los Mochis, Sinaloa, el 8 de junio del 2001. Mis padres son el Ing. Luis Eduardo Alverde Montemayor y Adriana Castro Careaga. Mi vida fue muy corta, solamente 3 años 3 meses, pero aún en mi inocencia, admiro la nobleza de mis padres y me llena de felicidad saber que decidieron donar mi corazón, mi hígado, mis 2 córneas y mis 2 riñones para que niños de Mérida, Celaya y México, tuvieran vida y calidad de vida a través de mis órganos.</h5>
+				</div>
+
+<div class="col-sm-4">
+					<!--<img src="./img/foods/biscuit.png" class="img-responsive" alt="">
+					<h2>Cookies</h2>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>-->
+				</div>
+				<div class="col-sm-4">
+					<img src="./img/foods/not2.jpg" class="img-responsive" alt="">
+					<h2></h2>
+
+					<h5>De mirada triste y amplia sonrisa, Kimberly de 9 años se sobrepone al trasplante de córnea que se le practicó y con el que ahora puede hacer una vida más normal como andar en bicicleta, ir sola a la escuela y ver la televisión. Desde el nacimiento la pequeña originaria del Estado de Chihuahua, tiene catarata congénita la cual la mantuvo por varios años casi en la oscuridad.</h5>
+				</div>
+
+				
+			</div>
+		</div>
+	</section>
+
+	<section id="four" class="section bg4">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+				<center><a href="https://www.facebook.com/Donappya/?fref=ts" target="_blank"><img src="img/facebook.png"></a><a href="https://twitter.com/edwintorito1?lang=es" target="_blank"> <img src="img/twitter.png">
+					<!--<p class="text-center"><a class="sharix" href="http://sharix.me/responsivewebmobile" target="_blank"><img src="http://sharix.me/img/shares/square/sharix-share-48x48.png" alt="responsivewebmobile@sharix" />mark on sharix</a></p>-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="" class="section nopadding bg5">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.620307728546!2d-99.2117329857946!3d19.298871149945622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdffc863d30edb%3A0x457df7a4e71064f1!2sCentro+Nacional+de+Trasplantes!5e0!3m2!1ses!2smx!4v1446875507740" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+		<!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3024.5024502564133!2d-74.01103735!3d40.70695435!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a161980d8a1%3A0x9e5797d5a981701d!2sNew+York+Stock+Exchange!5e0!3m2!1sen!2s!4v1392743334794" width="100%" height="800" frameborder="0" style="border:0"></iframe>-->
+	</section>
+
+	 <nav class="smartscroll-controls visible-lg">
+	 	<a href="#" class="prev scroll"></a>
+	 	<a href="#" class="next scroll"></a>
+	 </nav>
+
+	 <a href="#" class="smartscroll-totop"></a>
+
+	<!-- jQuery include -->
+	<script src="./js/jquery-2.1.0.min.js"></script>
+	<!-- Include all compiled Bootstrap plugins -->
+	<script src="./js/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+	<script src="./js/respond.min.js"></script>
+
+	<script src="./js/jquery.smartscroll.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$(document).smartscroll({fullscreen: false, controls: true});
+		});
+	</script>
+
+
+</body>
+</html>
